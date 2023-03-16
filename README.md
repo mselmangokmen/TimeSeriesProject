@@ -6,8 +6,7 @@ Traditional transformer models get a sequence as input and I take the advantage 
 
 
 You can find hyper parameters in model_summary.py file. 
-The output for model summary is represented below. The dimensions are batch size, sequence length and number of features respectively. [7,136,1]
-
+The output for model summary is represented below. The dimensions are batch
 
 before input layer: torch.Size([7, 136, 1])
 after input layer: torch.Size([7, 136, 100])
@@ -38,7 +37,8 @@ in encoder after norm layer : torch.Size([7, 136, 100])
 in encoder after ffn : torch.Size([7, 136, 100])
 in classification head : torch.Size([7, 136, 100])
 in classification head after seq: torch.Size([7, 5])
-after classification head: torch.Size([7, 5]) 
+after cls_res: torch.Size([7, 5])
+
 ==============================================================================================================
 Layer (type:depth-idx)                                       Output Shape              Param #
 ==============================================================================================================
