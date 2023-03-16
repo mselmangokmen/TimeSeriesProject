@@ -38,35 +38,6 @@ in encoder after ffn : torch.Size([7, 136, 100])
 in classification head : torch.Size([7, 136, 100])
 in classification head after seq: torch.Size([7, 5])
 after cls_res: torch.Size([7, 5]) 
+![image](https://user-images.githubusercontent.com/6734818/225657838-b3b211b1-9412-4752-ab98-059051f61060.png)
 
-==============================================================================================================
-Layer (type:depth-idx)                                       Output Shape              Param #
-==============================================================================================================
-Transformer                                                  [7, 5]                    --
-├─Linear: 1-1                                                [7, 136, 100]             200
-├─PostionalEncoding: 1-2                                     [7, 136, 100]             --
-│    └─Dropout: 2-1                                          [7, 136, 100]             --
-├─Encoder: 1-3                                               [7, 136, 100]             --
-│    └─ModuleList: 2-2                                       --                        --
-│    │    └─EncoderLayer: 3-1                                [7, 136, 100]             143,812
-│    │    └─EncoderLayer: 3-2                                [7, 136, 100]             143,812
-├─ClassificationHead: 1-4                                    [7, 5]                    --
-│    └─LayerNorm: 2-3                                        [7, 136, 100]             200
-│    └─Sequential: 2-4                                       [7, 5]                    --
-│    │    └─Flatten: 3-3                                     [7, 13600]                --
-│    │    └─Linear: 3-4                                      [7, 512]                  6,963,712
-│    │    └─ReLU: 3-5                                        [7, 512]                  --
-│    │    └─Linear: 3-6                                      [7, 256]                  131,328
-│    │    └─Linear: 3-7                                      [7, 5]                    1,285
-==============================================================================================================
-Total params: 7,384,349
-Trainable params: 7,384,349
-Non-trainable params: 0
-Total mult-adds (M): 51.68
-==============================================================================================================
-Input size (MB): 0.00
-Forward/backward pass size (MB): 20.03
-Params size (MB): 29.54
-Estimated Total Size (MB): 49.57
-==============================================================================================================
- 
+
