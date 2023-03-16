@@ -1,9 +1,8 @@
-# TimeSeriesClassification
-This repository is created for experiments on time series classification. 
+# TimeSeries Classification and Forecasting
+This repository is created for experiments on time series classification and forecasting.   
+For now, the model has been modified for classification task. In coming days, the model will be modified for forecasting.  
 
 Modifications made on the traditional Transformer model used for NLP. 
-
-
 
 
 Traditional transformer models get a sequence as input and I take the advantage of this sequence input.
