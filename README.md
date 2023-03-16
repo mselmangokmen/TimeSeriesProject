@@ -8,12 +8,12 @@ Traditional transformer models get a sequence as input and I take the advantage 
 You can find hyper parameters in model_summary.py file. 
 The output for model summary is represented below. The dimensions are batch
 
-before input layer: torch.Size([7, 136, 1])
-after input layer: torch.Size([7, 136, 100])
-after pos_emb: torch.Size([7, 136, 100])
-in Multi Head Attention Q,K,V: torch.Size([7, 136, 100])
-in splitted Multi Head Attention Q,K,V: torch.Size([7, 4, 136, 25])
-in Scale Dot Product, k_t size: torch.Size([7, 4, 25, 136])
+before input layer: torch.Size([7, 136, 1]) 
+after input layer: torch.Size([7, 136, 100])  
+after pos_emb: torch.Size([7, 136, 100]) 
+in Multi Head Attention Q,K,V: torch.Size([7, 136, 100]) 
+in splitted Multi Head Attention Q,K,V: torch.Size([7, 4, 136, 25]) 
+in Scale Dot Product, k_t size: torch.Size([7, 4, 25, 136]) 
 in Scale Dot Product, score size: torch.Size([7, 4, 136, 136])
 in Scale Dot Product, score size after softmax : torch.Size([7, 4, 136, 136])
 in Scale Dot Product, v size: torch.Size([7, 4, 136, 25])
