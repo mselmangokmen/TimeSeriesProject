@@ -18,6 +18,8 @@ TRANING.
 DATASET:   
 https://www.kaggle.com/datasets/shayanfazeli/heartbeat?select=mitbih_train.csv. 
 
+
+TEST:  
 You can download easily MIT-BIH Arrhythmia Dataset from the link above. Download mitbih_train.csv and mitbih_test.csv files and paste in same path with 'ecg_dataset.py'              
 There are 5 different classes and the all classes are enumerated from 0 to 4 in label dataset.  
 batch_size =100   
